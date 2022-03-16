@@ -715,21 +715,28 @@ body {
   top: 50%;
   right: 3%;
   position: absolute;
+  transition: 0.6s all;
 }
 
 .slider_arrow:active,
 .slider_arrow:hover,
 .slider_arrow:focus {
   opacity: 0.6;
+  transform: translate(-8px, 0px);
 }
 
 /* intro end */
 
 /* info global start */
 .information {
+  margin: 0 207px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   color: #282d3c;
-  margin-top: 176px;
-  margin-left: 177px;
+  row-gap: 176px;
+  column-gap: 60px;
+  padding-top: 176px;
 }
 
 .about {
@@ -753,27 +760,16 @@ body {
 }
 
 .info_main {
+  font-size: 18px;
+  line-height: 28px;
   margin-top: 32px;
   width: 586px;
 }
 
 /* info1 start */
 
-.info1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 177px;
-}
-
 /* info1 end */
 /* info2 start */
-
-.info2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 .info_title2 {
   padding-top: 16px;
@@ -811,5 +807,4 @@ body {
 
 .page {
   margin-bottom: 1000px;
-  background-repeat: no-repeat;
 }

@@ -626,7 +626,7 @@ body {
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   top: 0;
   left: 0;
@@ -736,8 +736,8 @@ body {
   color: #282d3c;
   row-gap: 176px;
   column-gap: 60px;
-  padding-top: 176px;
-  padding-bottom: 176px;
+  margin-top: 176px;
+  margin-bottom: 176px;
 }
 
 .about {
@@ -814,7 +814,7 @@ body {
   column-gap: 60px;
   row-gap: 58px;
   list-style-type: disc;
-  padding-left: 208px;
+  justify-content: center;
   color: black;
 }
 
@@ -867,15 +867,32 @@ body {
 /* news start */
 
 .news {
-  display: grid;
-  grid-template-columns: 300px 243px 243px 243px;
-  column-gap: 30px;
-  padding-left: 207px;
-  padding-top: 176px;
+  display: flex;
+  justify-content: center;
+  margin-top: 176px;
   color: #000000;
 }
+
+.news_slider {
+  padding-left: 143px;
+  display: flex;
+  gap: 30px;
+}
+
 .news i {
   font-size: 45px;
+}
+
+.news a {
+  text-decoration: none;
+  color: black;
+}
+
+.news a:hover,
+.news a:focus,
+.news a:active {
+  opacity: 0.75;
+  color: #280f2c;
 }
 
 .news button {
@@ -912,6 +929,198 @@ body {
   color: #626262;
 }
 /* news end */
-.page {
-  margin-bottom: 1000px;
+/* map start */
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin-top: 176px;
+}
+
+.map_title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 50px;
+  padding-bottom: 56px;
+}
+
+.map_title span {
+  font-weight: 800;
+  font-size: 76px;
+}
+
+.global_map {
+  opacity: 0.4;
+  position: relative;
+}
+
+.markers {
+  z-index: 4;
+  position: absolute;
+}
+
+.markers:focus,
+.markers:active,
+.markers img:hover {
+  transition: 0.2s all;
+  opacity: 0.9;
+  transform: translate(0px, -4px);
+}
+
+.red {
+  position: absolute;
+  left: 461px;
+  top: 4px;
+}
+.bluee {
+  position: absolute;
+  left: 693px;
+  top: 52px;
+}
+.salat {
+  position: absolute;
+  left: 587px;
+  top: 68px;
+}
+.orange {
+  position: absolute;
+  left: 459px;
+  top: 118px;
+}
+.linear {
+  position: absolute;
+  left: 778px;
+  top: 220px;
+}
+.gray {
+  position: absolute;
+  left: 155px;
+  top: 36px;
+}
+.yellow {
+  position: absolute;
+  left: 157px;
+  top: 120px;
+}
+.pink {
+  position: absolute;
+  left: 233px;
+  top: 189px;
+}
+
+.country {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 57px;
+}
+
+.country div {
+}
+
+.europe {
+  width: 32px;
+  height: 32px;
+  background: #ff486e;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.Asia {
+  width: 32px;
+  height: 32px;
+  background: #319cd8;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.Middle_East {
+  width: 32px;
+  height: 32px;
+  background: #319cd8;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.Africa {
+  width: 32px;
+  height: 32px;
+  background: #ff9548;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.Oceania {
+  width: 32px;
+  height: 32px;
+  background: #5a57e1;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.North_America {
+  width: 32px;
+  height: 32px;
+  background: #02c567;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.Central_America {
+  width: 32px;
+  height: 32px;
+  background: #ffe03a;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.South_America {
+  width: 32px;
+  height: 32px;
+  background: #ed38f1;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+/* map end */
+
+.company {
+  position: relative;
+  top: -138px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 206px;
+  background-color: #f7f7f8;
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.1);
+  margin-right: 5%;
+}
+
+.line {
+  height: 120px;
+  border: 1px solid #282d3c;
+  opacity: 0.2;
+}
+
+.footer {
+  margin-top: 328px;
+  background-color: #0f0f11;
+  height: 347px;
+}
+
+.menu {
+  margin: 0 207px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_nav_item {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f7f7f8;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.menu_nav_item:first-child {
+  margin: 0;
 }
